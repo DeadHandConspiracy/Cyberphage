@@ -1,5 +1,8 @@
 @echo off
 setlocal
+CsProjectdir=\Windows\GARoboCore
+CsProjectname=\GARoboCore.csproj
+Outputbuilddir=\Windows
 
 :: Default target if no argument is provided
 if "%1"=="" goto :help
@@ -20,18 +23,17 @@ goto :end
 
 :clean
 echo Cleaning project...
-dotnet clean
+dotnet clean --project "%CD%%CsProjectdir%%CsProjectname%"
 goto :end
 
 :run
 echo Running project...
-dotnet run --configuration Release
+dotnet run --project "%CD%%CsProjectdir%%CsProjectname%" --configuration Release
 goto :end
 
 :publish
 echo Publishing project...
-:: dotnet publish --configuration Release --output ./publish
-dotnet publish -c Release -r win-x64 --self-contained=true -p:PublishSingleFile=true   
+dotnet publish "%CD%%CsProjectdir%" -o "%CD%%Outputbuilddir%\bin" -c Release /p:DebugType=None /p:DebugSymbols=false -r win-x64 --self-contained=true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
 goto :end
 
 :test
