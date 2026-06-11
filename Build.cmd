@@ -4,10 +4,12 @@
 
 :<<BATCH
 @echo off
+setlocal
+
 echo [Windows] OS: %OS%
 echo [Windows] Current dir: %CD%
 
-CALL "%CD%\window\make.bat"
+CALL "%CD%\Windows\Build.bat" %1
 exit /b
 BATCH
 
