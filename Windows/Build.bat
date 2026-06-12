@@ -34,6 +34,18 @@ goto :end
 :publish
 echo Publishing project...
 dotnet publish "%CD%%CsProjectdir%" -o "%CD%%Outputbuilddir%\bin" -c Release /p:DebugType=None /p:DebugSymbols=false -r win-x64 --self-contained=true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
+
+:: Create the desktop shortcut
+@echo off
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "%USERPROFILE%\Desktop\Cyberphage.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "%CD%%Outputbuilddir%\bin\Cyberphage.exe" >> %SCRIPT%
+echo oLink.IconLocation = "C:\Path\To\Icon.ico" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
 goto :end
 
 :test
