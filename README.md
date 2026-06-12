@@ -28,7 +28,7 @@ Cyberphage is a strategic programming game where combat is resolved entirely thr
 2. Build:
 
         cd [folder location]\Cyberphage
-        ./Build.cmd
+        bash ./Build.cmd
 
 # Core Op-codes
 
