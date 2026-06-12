@@ -5,16 +5,30 @@ Cyberphage is a strategic programming game where combat is resolved entirely thr
 
 
 # How to Build Cyberphage
-1. Download: curl -L -o Cyberphage.zip https://github.com/DeadHandConspiracy/Cyberphage/archive/refs/heads/main.zip
-2. Unzip: unzip Cyberphage.zip
+## Build on Windows
 
-3. Build on Windows
+1. Download:
 
-    cd [folder location]\cyberphage
-    Build publish
+        curl -L -o Cyberphage.zip https://github.com/DeadHandConspiracy/Cyberphage/archive/refs/heads/main.zip
+
+3. Unzip:
+
+        unzip Cyberphage.zip
+
+5. Build:
+
+        cd [folder location]\Cyberphage
+        Build publish
    
-5. Build on Linux
-   
+## Build on Linux
+
+1. Download:
+
+        git clone https://github.com/DeadHandConspiracy/Cyberphage
+2. Build:
+
+        cd [folder location]\Cyberphage
+        ./Build.cmd
 
 # Core Op-codes
 
