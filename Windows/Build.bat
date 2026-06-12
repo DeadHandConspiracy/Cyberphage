@@ -1,8 +1,8 @@
 @echo off
 setlocal
-CsProjectdir=\Windows\GARoboCore
-CsProjectname=\GARoboCore.csproj
-Outputbuilddir=\Windows
+Set "CsProjectdir=\Windows\Cyberphage"
+Set "CsProjectname=\Cyberphage.csproj"
+Set "Outputbuilddir=\Windows"
 
 :: Default target if no argument is provided
 if "%1"=="" goto :help
