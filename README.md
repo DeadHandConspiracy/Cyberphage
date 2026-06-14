@@ -18,6 +18,8 @@ Cyberphage is a strategic programming game where combat is resolved entirely thr
 
         cd [folder location]\Cyberphage
         Build publish
+6. Run:
+TBD
    
 ## Build on Linux
 
@@ -28,7 +30,11 @@ Cyberphage is a strategic programming game where combat is resolved entirely thr
 
         cd [folder location]\Cyberphage
         bash ./Build.cmd
-# Basic Interface
+3. Run:
+TBD
+
+# Basic Interface 
+[Basic Interface.md](https://github.com/DeadHandConspiracy/Cyberphage/blob/main/Basic%20Interface.md)
 
 # How to play
 
