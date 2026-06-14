@@ -1,8 +1,7 @@
 # Cyberphage
 Cyberphage is a strategic programming game where combat is resolved entirely through code injection rather than traditional weaponry.
 
-![Cyberphage](https://github.com/DeadHandConspiracy/Cyberphage/blob/main/Cyberphage.png)
-
+![Cyberphage](https://github.com/DeadHandConspiracy/Cyberphage/blob/main/Assets/Cyberphage.png)
 
 # How to Build Cyberphage
 ## Build on Windows
