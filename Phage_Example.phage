@@ -2,7 +2,7 @@
 	// Fingerprint
 	fingerprint: 000001,
 	
-	// Phage name
+	// Phage names
 	phagename: 'ICBM',
 	author: 'Deadhand',
 	
@@ -16,7 +16,7 @@
 	Bank40: "bank terminate",
 	
 	// Phage Code Comments
-	Comment1:[5,6,"testing" ],
+	Comment1:[5,6,"testing" ], // Injects the comment into proper locations; Row, Column, Comment
 	Comment2:[1,6,"testing" ],
 	
 	
