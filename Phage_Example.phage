@@ -16,8 +16,7 @@
 	Bank40: "bank terminate",
 	
 	// Phage Code Comments
-	Comment1:[5,6,"testing" ], // Injects the comment into proper locations; Row, Column, Comment
-	Comment2:[1,6,"testing" ],
-	
+	Comment1:[1, 0, "testing" ], // Injects the comment into proper locations; Row, [newline= 0 EOL=1], Comment
+	Comment2:[6, 0, "testing" ],
 	
 }   
