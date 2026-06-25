@@ -24,11 +24,16 @@ TBD
 ## Build on Linux
 
 1. Download:
+# Create a git directory in your home folder
+        mkdir -p ~/git
+# Navigate to it
+        cd ~/git
+# Clone the repository (will create ~/git/Cyberphage)
+        git clone https://github.com/DeadHandConspiracy/Cyberphage  
 
-        git clone https://github.com/DeadHandConspiracy/Cyberphage
 2. Build:
 
-        cd [folder location]\Cyberphage
+        cd ~/git/Cyberphage
         bash ./Build.cmd
 3. Run:
 TBD
